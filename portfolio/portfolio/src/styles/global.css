@@ -1,0 +1,358 @@
+/* ===============================
+   DESIGN TOKENS
+================================ */
+:root {
+  --bg: #0b0f14;
+  --surface: #121822;
+  --accent: #ff7a18;
+
+  --text-main: #e6eaf2;
+  --text-muted: #9aa4b2;
+
+  --border: #1e2633;
+}
+
+/* ===============================
+   RESET & BASE
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* ===============================
+   TYPOGRAPHY
+================================ */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin-top: 1rem;
+}
+
+/* ===============================
+   LINKS & BUTTONS
+================================ */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #000;
+}
+
+.btn.primary:hover {
+  opacity: 0.9;
+}
+
+.btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--text-main);
+}
+
+.btn.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ===============================
+   LAYOUT
+================================ */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 5rem 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-main);
+}
+
+.socials a {
+  margin-left: 1rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-left p {
+  font-size: 1.05rem;
+}
+
+.accent {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.section-divider {
+  width: 700px;
+  height: 3px;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 4px;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+
+.hero-actions {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ===============================
+   CARDS (PROJECTS / HERO)
+================================ */
+.project-card,
+.hero-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  border-radius: 14px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover,
+.hero-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ===============================
+   PROJECT CARD
+================================ */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech span {
+  background: #1c2330;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* ===============================
+   HERO CARD
+================================ */
+.hero-card h3 {
+  margin-bottom: 1rem;
+}
+
+.hero-card ul {
+  list-style: none;
+}
+
+.hero-card li {
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+}
+
+/* ===============================
+   SKILLS
+================================ */
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.skill-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  section {
+    padding: 4rem 1.2rem;
+  }
+}
+
+.nav-links a.active {
+  color: var(--text-main);
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 1.2rem 1.4rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* ===============================
+    BUTTON MICRO-INTERACTIONS
+  ================================ */
+  .btn {
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+    will-change: transform;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  }
+
+  .btn:active {
+    transform: translateY(-1px) scale(0.98);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+  }
+  /* ===============================
+    PROJECT CARD MICRO-INTERACTIONS
+  ================================ */
+  .project-card {
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease,
+      border-color 0.25s ease;
+    will-change: transform;
+  }
+
+  .project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38);
+  }
+
+  /* Subtle emphasis on tech pills when hovering card */
+  .project-card:hover .tech span {
+    filter: brightness(1.08);
+  }
+
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Task Management API",
+    "description": "A RESTful backend API for managing projects and tasks with authentication, relational data models, and clean API design principles.",
+    "tech": ["Node.js", "Express", "PostgreSQL"],
+    "github": "",
+    "type": "REST API"
+  },
+  {
+    "title": "Smart Takeaway Ordering System",
+    "description": "A backend-focused pre-order system that allows users to place takeaway orders in advance and collect them via scheduled pickup slots, reducing wait times and improving shop efficiency.",
+    "tech": ["Node.js", "Express", "PostgreSQL"],
+    "github": "",
+    "type": "Backend System"
+  }
+]

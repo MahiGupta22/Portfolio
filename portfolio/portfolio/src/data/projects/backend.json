@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Task Management API",
+    "description": "A RESTful backend API for managing projects and tasks with authentication, relational data models, and clean API design principles.",
+    "tech": ["Node.js", "Express", "PostgreSQL"],
+    "github": "",
+    "category": "REST API"
+  },
+  {
+    "title": "Smart Takeaway Ordering System",
+    "description": "A backend-focused pre-order system that enables users to place takeaway orders in advance and collect them via scheduled pickup slots, focusing on order lifecycle management and efficient queue handling.",
+    "tech": ["Node.js", "Express", "PostgreSQL"],
+    "github": "",
+    "category": "Backend System"
+  },
+  {
+    "title": "Smart Complaint & Resolution System",
+    "description": "A backend-driven system to register, track, and resolve complaints using role-based access control, priority handling, and structured status workflows.",
+    "tech": ["Django", "Django REST Framework", "PostgreSQL"],
+    "github": "",
+    "category": "Django Backend"
+  },
+  {
+    "title": "Flight Reservation System",
+    "description": "A backend system implementing Dijkstra’s Algorithm to determine minimum-cost flight routes with separate Admin and User functionalities.",
+    "tech": ["Python", "Algorithms", "Data Structures"],
+    "github": "",
+    "category": "Algorithms"
+  },
+  {
+    "title": "Burger Ordering System",
+    "description": "A Node.js-based backend application implementing full CRUD operations with a modular architecture for maintainability.",
+    "tech": ["Node.js", "Express", "EJS"],
+    "github": "",
+    "category": "Backend CRUD"
+  }
+]
