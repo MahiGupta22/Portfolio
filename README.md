@@ -8,7 +8,7 @@ The portfolio is designed with a clean, modern UI and subtle animations, focusin
 
 ## 🚀 Live Website
 
-🔗 **Live URL:** https://your-portfolio-url.vercel.app  
+🔗 **Live URL:** https://portfolio-amber-omega-84.vercel.app/  
 _(Replace with your actual deployed link)_
 
 ---
