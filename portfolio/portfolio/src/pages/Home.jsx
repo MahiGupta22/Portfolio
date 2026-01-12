@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
 import ProjectCard from "../components/ProjectCard";
 import featured from "../data/projects/featured.json";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -27,12 +28,12 @@ export default function Home() {
           </p>
 
           <div className="hero-actions">
-            <a className="btn primary" href="/projects">
+            <NavLink className="btn primary" to="/projects">
               View Projects
-            </a>
-            <a className="btn secondary" href="/contact">
+            </NavLink>
+            <NavLink className="btn secondary" to="/contact">
               Contact Me
-            </a>
+            </NavLink>
           </div>
         </motion.div>
 
@@ -68,9 +69,9 @@ export default function Home() {
         </div>
 
         <div style={{ marginTop: "2rem" }}>
-          <a className="btn secondary" href="/projects">
+          <NavLink className="btn secondary" to="/projects">
             View All Projects →
-          </a>
+          </NavLink>
         </div>
       </section>
 
@@ -103,9 +104,9 @@ export default function Home() {
           subtitle="Open to internships, projects, and learning opportunities"
         />
 
-        <a className="btn primary" href="/contact">
+        <NavLink className="btn primary" to="/contact">
           Contact Me
-        </a>
+        </NavLink>
       </section>
     </>
   );
